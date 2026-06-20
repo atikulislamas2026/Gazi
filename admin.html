@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<h2 id="loginTitle">Admin Login</h2>
+
+<div id="loginBox">
+  <input id="email" placeholder="Email"><br><br>
+  <input id="password" type="password" placeholder="Password"><br><br>
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none; margin-top:20px;">
+
+  <h3>Hero Upload</h3>
+
+  <input type="file" id="hero1File"><br>
+  <img id="hero1Preview" width="120"><br><br>
+
+  <input type="file" id="hero2File"><br>
+  <img id="hero2Preview" width="120"><br><br>
+
+  <input type="file" id="hero3File"><br>
+  <img id="hero3Preview" width="120"><br><br>
+
+  <h3>Mid Upload</h3>
+
+  <input type="file" id="mid1File"><br>
+  <img id="mid1Preview" width="120"><br><br>
+
+  <input type="file" id="mid2File"><br>
+  <img id="mid2Preview" width="120"><br><br>
+
+  <input type="file" id="mid3File"><br>
+  <img id="mid3Preview" width="120"><br><br>
+
+  <button id="uploadBtn">UPLOAD IMAGES</button>
+
+
+  <button onclick="logout()" style="margin-top:20px;background:red;color:white;padding:10px 15px;border:none;border-radius:8px;">
+  Logout
+</button>
+
+</div>
+
+
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
