@@ -1131,3 +1131,204 @@ button:hover{
     font-size:10px;
   }
 }
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f5f6fa;
+}
+
+/* SECTION */
+.apps {
+  padding: 15px;
+}
+
+/* 2 COLUMN ROW */
+.app-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* APP CARD */
+.app-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGO */
+.app-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 0;
+  box-shadow: none;
+  display: block;
+}
+
+/* APP TITLE */
+.app-title {
+  font-size: 13px;
+  margin: 4px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+/* DOWNLOAD BUTTON */
+.download-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  background: #1a73e8;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.download-btn:hover {
+  background: #0f5bd3;
+  transform: scale(1.05);
+}
+
+/* COUNTER / TEXT SECTION (safe styling) */
+.counter {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* WHATSAPP BUTTON (if you use) */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .app-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .app-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .app-title {
+    font-size: 12px;
+  }
+  
+
+  .download-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding: 8px;
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.footer-links a:hover {
+  background: #e0e0e0;
+}
+
+
+.get-apps-btn {
+  display: flex;
+  flex-direction: column;  /* 👈 IMPORTANT (top to bottom) */
+  align-items: center;
+
+  margin-top: 15px;
+  padding: 12px;
+
+  background: #1a73e8;
+  color: white;
+
+  border-radius: 10px;
+  text-decoration: none;
+
+  width: 120px;   /* optional for nice box */
+}
+
+.get-apps-btn img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+.get-apps-btn span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+
+.payment-section {
+  text-align: center;
+  padding: 30px 10px;
+  background: #fff;
+}
+
+.payment-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.payment-image img {
+  width: 100%;
+  max-width: 600px;   /* mobile friendly limit */
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+
+/* Top bar add */
+
+

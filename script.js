@@ -208,3 +208,8 @@ function autoSlide() {
 
 setInterval(autoSlide, 3000);
 
+
+
+
+/* Top bar add */
+
