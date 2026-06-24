@@ -10,7 +10,7 @@ if (hero) {
     h++;
     if (h >= hero.children.length) h = 0;
     hero.style.transform = `translateX(-${h * 100}%)`;
-  }, 3000);
+  }, 6000);
 }
 
 /* MID SLIDER */
@@ -19,7 +19,7 @@ if (mid) {
     m++;
     if (m >= mid.children.length) m = 0;
     mid.style.transform = `translateX(-${m * 100}%)`;
-  }, 3500);
+  }, 5000);
 }
 
 /* COUNTER */

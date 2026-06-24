@@ -249,7 +249,7 @@ body{
 
 .track{
   display:flex;
-  transition:transform 0.6s ease;
+   transition: transform 1s ease-in-out;
 }
 
 .track img{
@@ -1329,6 +1329,163 @@ body {
 
 
 
-/* Top bar add */
+.app-card {
+  width: 160px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.app-card img {
+  width: 110px;        /* 🔥 main fix */
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.app-card button {
+  padding: 8px 12px;
+  border: none;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 8px;
+}
+
+
+.pkg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 10px;
+  background: #f5f7fb;
+}
+
+/* CARD DESIGN */
+.pkg-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.pkg-card:hover {
+  transform: translateY(-5px);
+}
+
+/* HEADER */
+.pkg-head h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #777;
+}
+
+.pkg-head h2 {
+  margin: 5px 0 10px;
+  font-size: 22px;
+  color: #222;
+}
+
+/* PRICE */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00a86b;
+  margin-bottom: 15px;
+}
+
+/* LIST STYLE (✔️ MARK) */
+.pkg-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.pkg-card ul li {
+  padding: 6px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 22px;
+}
+
+/* ✔️ CHECK MARK */
+.pkg-card ul li::before {
+  content: "✔️";
+  color: #00c853;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.pkg-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pkg-card button:hover {
+  background: #0056b3;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* 👈 বাম পাশে আনে */
+  gap: 10px;
+}
+
+/* WhatsApp + Contact section */
+.contact-wa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 👈 বাম পাশে চাপাবে */
+  margin-top: 10px;
+}
+
+/* Gmail text */
+.contact-wa p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* WhatsApp button */
+.wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* WhatsApp icon size */
+.wa-btn img {
+  width: 18px;
+  height: 18px;
+}
 
 
