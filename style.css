@@ -31,7 +31,7 @@ body{
 
 /* HEADER */
 .header{
-  background: rgba(76, 0, 255, 0.75);
+  background: rgba(97, 85, 124, 0.75);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(226,232,240,0.8);
 }
@@ -202,16 +202,6 @@ body{
   }
 }
 
-/* COMMON CARD */
-.section-card{
-  background: rgba(255,255,255,0.9);
-  border: 1px solid rgba(226,232,240,0.7);
-  border-radius: 22px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-  padding: 18px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
 
 .section-card:hover{
   transform: translateY(-4px);
@@ -263,7 +253,7 @@ body{
 .marquee{
   width:100%;
   overflow:hidden;
-  background:#ffffff;
+  background:#4b4a86;
   border:1px solid var(--border);
   border-radius:16px;
   padding:12px 0;
@@ -275,7 +265,7 @@ body{
   padding-left:100%;
   font-size:15px;
   font-weight:600;
-  color:var(--primary);
+  color: #ffffff !important; 
   animation:move 16s linear infinite;
 }
 
@@ -937,10 +927,10 @@ button:hover{
   box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
 
-/* ===== SUPPORT BADGE CLEAN ===== */
+/* ===== SUPPORT BADGE CLEAN ===== */ /*** working mathod//////*/
 .support{
-  background:#ffffff;
-  color:#111;
+  background:#282758;
+  color:#ffffff;
   font-weight:600;
   border:1px solid #eee;
   box-shadow:0 8px 18px rgba(0,0,0,0.05);
@@ -1253,6 +1243,7 @@ body {
   }
 }
 
+  /* working  */
 
 .footer-links {
   display: flex;
@@ -1263,10 +1254,10 @@ body {
 
 .footer-links a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-size: 14px;
   padding: 8px;
-  background: #f1f1f1;
+  background: linear-gradient(180deg, #1a3569 0%, #4c5a77 100%) !important; 
   border-radius: 6px;
 }
 
@@ -1552,3 +1543,225 @@ body {
     font-size: 14px;
   }
 }
+
+
+
+
+/*
+
+/* অ্যাপ কার্ড এবং ইমেজ এর প্রফেশনাল স্টাইল (সংশোধিত) */
+.app-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ২ কলাম সমানভাবে ভাগ হবে */
+  gap: 15px; /* কার্ডগুলোর মাঝখানের গ্যাপ */
+  margin-bottom: 15px;
+  width: 100%; /* কন্টেইনারের পুরোটা জুড়ে থাকবে */
+  justify-content: center; /* কার্ডগুলোকে মাঝখানে রাখবে */
+  align-items: stretch; /* হাইট সমান রাখার জন্য */
+}
+.app-card {
+  background: #ece6e6;
+  border-radius: 20px;
+  padding: 25px 15px; 
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  
+  /* বাটন সমান রাখার জন্য Flexbox যুক্ত করা হলো */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* সবগুলো কার্ড যেন সমান উচ্চতার হয় */
+}
+
+.app-logo {
+  width: 130px !important;
+  height: 130px !important;
+  object-fit: contain;
+  margin-bottom: 15px;
+  
+  /* লোগোগুলোকে একটি কমন সুন্দর ফ্রেমের ভেতর আনার জন্য */
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.app-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  
+  /* টেক্সট এক লাইন বা দুই লাইনের যাই হোক, এটি সমান জায়গা নেবে */
+  min-height: 48px; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* ডাউনলোড বাটন */
+.download-btn {
+  display: inline-block;
+  margin-top: auto; /* 🔥 এই কোডটি বাটনকে সবসময় কার্ডের একদম নিচে নামিয়ে রাখবে */
+  padding: 12px 30px; 
+  font-size: 16px;    
+  background: linear-gradient(135deg, #0004ff, #2836b1);
+  color: #fff;
+  border-radius: 50px; 
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  width: 90%; 
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  background: #1d4ed8;
+  box-shadow: 0 8px 20px rgba(0, 4, 255, 0.3); /* হোভারে সুন্দর শ্যাডো */
+}
+
+/* মোবাইল রেসপন্সিভনেস */
+@media (max-width: 480px) {
+  .app-logo {
+    width: 100px !important;  /* মোবাইলের জন্য সাইজ অপটিমাইজ করা হলো */
+    height: 100px !important;
+  }
+  
+  .app-title {
+    font-size: 14px;
+    min-height: 42px;
+  }
+  
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* হুবহু স্ক্রিনশটের মতো ডার্ক ব্যাকগ্রাউন্ড থিম */
+
+body {
+  /* প্রথম কালারটি (#141c2b) উপরে এবং দ্বিতীয় কালারটি (#0b101a) নিচে থাকবে */
+  background: linear-gradient(180deg, #1a3569 0%, #fbfcff 100%) !important; 
+  color: #f8fafc !important; /* টেক্সট সাদা রাখার জন্য */
+}
+/* স্ক্রিনশটের মতো কার্ডগুলোর ব্যাকগ্রাউন্ড */
+.section-card,
+.app-card,
+.pkg-card,
+.box,
+.counter-item {
+  background: #475a85 !important; /* কার্ডের জন্য সামান্য হালকা ডার্ক কালার */
+  border: 1px solid #e8ecf3 !important; /* কার্ডের চারপাশে সুন্দর হালকা বর্ডার */
+}
+
+/* সব ধরনের টাইটেল এবং টেক্সট যেন ডার্ক মোডে স্পষ্ট দেখা যায় */
+h1, h2, h3, h4, .app-title, .section-title, .pkg-card h2, .pkg-card h3 {
+  color: #ffffff !important;
+}
+
+/* প্যারাগ্রাফ এবং সাবটাইটেলগুলোর কালার */
+p, .section-subtitle, .app-card p, .pkg-card ul li {
+  color: #e8ecf1 !important; /* হালকা ছাই/সাদা রঙ */
+}
+
+/* লোগোর ব্যাকগ্রাউন্ড ডার্ক মোডের সাথে মানানসই করা হলো */
+.app-logo {
+  background: #141c2b !important;
+  border: 1px solid #2d3748 !important;
+}
+
+/* লোগোর চারপাশের কালার/বর্ডার মুছে শুধু ট্রান্সপারেন্ট পিএনজি বড় করে দেখানোর কোড */
+.app-logo {
+  width: 120px !important; /* লোগো আগের চেয়ে আরও বড় করা হলো */
+  height: 120px !important;
+  object-fit: contain !important; /* লোগোর অরিজিনাল সাইজ যেন না কাটে */
+  margin-bottom: 20px !important;
+  
+  /* চারপাশের অতিরিক্ত ফ্রেম, কালার এবং বর্ডার রিমুভ করা হলো */
+  background: transparent !important; 
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important; 
+  border-radius: 0 !important;
+  
+  /* পিএনজি লোগোকে ডার্ক ব্যাকগ্রাউন্ডে ভাসিয়ে রাখতে একটি চমৎকার ড্রপ-শ্যাডো */
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+}
+
+/* Our Growing Numbers (Counter) এর ব্যাকগ্রাউন্ড ডিজাইন */
+.counter-item {
+  /* ডার্ক থিমের সাথে মানানসই একটি সুন্দর গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+  background: linear-gradient(135deg, #052352 0%, #a2aabe 100%) !important; 
+  border: 1px solid #334155 !important; /* হালকা বর্ডার */
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important; /* প্রফেশনাল শ্যাডো */
+}
+
+/* ভেতরের নাম্বারগুলোর (0+) কালার */
+.counter-item h2 {
+  color: #38bdf8 !important; /* সুন্দর একটি উজ্জ্বল নীল কালার */
+}
+
+/* ভেতরের টেক্সটের (Resellers, Cards) কালার */
+.counter-item p {
+  color: #cbd5e1 !important;
+}
+
+
+.app-card {
+  /* ডার্ক থিমের সাথে মানানসই একটি সুন্দর গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+  background: linear-gradient(135deg, #052352 0%, #a2aabe 100%) !important; 
+  border: 1px solid #334155 !important; /* হালকা বর্ডার */
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important; /* প্রফেশনাল শ্যাডো */
+}
+
+
+
+/* হেডার working workingব্যাকগ্রাউন্ড ফিক্স */
+.header {
+  background: #0b0449 !important; /* আমাদের কার্ডের ব্যাকগ্রাউন্ড কালারের সাথে মিলিয়ে দিলাম */
+  border-bottom: 1px solid #2A3B54 !important; /* একটি চিকন সুন্দর বর্ডার */
+  backdrop-filter: blur(10px); /* হালকা ব্লার ইফেক্ট */
+}
+
+/* হেডারের টেক্সট কালার */
+.header-right h2 {
+  color: #ffffff !important; /* টেক্সট সাদা করে দিলাম যাতে ফুটে ওঠে */
+}
+
+
+
+
+/* FAQ সেকশনকে ডার্ক থিমের সাথে ম্যাচ করা */
+.section-card .faq-box {
+  background: transparent !important; /* ভেতরের বক্সের ব্যাকগ্রাউন্ড ট্রান্সপারেন্ট রাখা হলো */
+  border: none !important;
+}
+
+.faq-box details {
+  background: #334369 !important; /* কার্ডের সাথে মিলিয়ে কালার */
+  border: 1px solid #2d3748 !important; /* সুন্দর বর্ডার */
+  border-radius: 14px;
+  color: #ffffff !important; /* প্রশ্ন ও উত্তরের টেক্সট রঙ */
+}
+
+.faq-box summary {
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.faq-box details p {
+  color: #cbd5e1 !important; /* উত্তরের রঙ হালকা ছাই */
+  border-top: 1px solid #2d3748;
+  margin-top: 10px;
+}
+
+
